@@ -25,7 +25,7 @@ switch ($mensaje) {
         break;
 }
 function sendmensaje($chatid , $response) {
-    $url = $GLOBALS ['https://crissr2023.github.io/bot.php/'] .'/sendmensaje?chat_id='. $chatid .'&parse_mode=html&text='.urlencode($response);
+    $url = $GLOBALS ['website'] .'/sendmensaje?chat_id='. $chatid .'&parse_mode=html&text='.urlencode($response);
     file_get_contents($url);    
     }
     ?>
